@@ -1,8 +1,6 @@
 ##### Lab 10 ####
 library(tidyverse)
 
-
-
 #  1- Basic Simulation
 p <- .39
 total.num.people <- 1004
@@ -35,7 +33,7 @@ dist2 <- dist2 |>
 ggplot(data = dist2) +
   geom_histogram(aes(x = sample.proportion2, y = after_stat(density)), bins = 30, fill = "lightblue", color = "black", alpha = 0.7) +
   geom_density(aes(x = sample.proportion2), color = "red", size = 1.2) +
-  labs(title = "Sampling Distribution of Sample Proportions",
+  labs(title = "Sampling Distribution of Sample Proportions, with doubled sample size",
        x = "Sample Proportion",
        y = "Density")
 
